@@ -1,0 +1,284 @@
+{
+  "case_id": "CASE-P015-20261020",
+  "generated_at_utc": "2026-10-20T17:50:42+00:00",
+  "as_of_utc": "2026-10-20T12:00:00+00:00",
+  "region": "IN",
+  "product": {
+    "product_id": "P015",
+    "title": "Jute Shopper Tote",
+    "category": "bags",
+    "seller_id": "S008",
+    "seller_name": "Urban Threads",
+    "seller_region": "IN",
+    "seller_account_age_days": 520,
+    "reviews": 459,
+    "avg_rating": 4.21,
+    "verified_purchase_rate": 0.91,
+    "reviewer_account_age_avg_days": 1055.7,
+    "reviewer_account_age_median_days": 1007.6,
+    "reviewer_categories_avg": 7.27,
+    "first_review_utc": "2026-05-04T17:33:42+00:00",
+    "last_review_utc": "2026-10-20T07:20:54+00:00",
+    "current_price_inr": 699
+  },
+  "data_quality": [],
+  "risk_score": 0.0,
+  "tier": "Low",
+  "scoring": {
+    "risk_score": 0.0,
+    "tier": "Low",
+    "weighted_mean": 0.0,
+    "top2_mean": 0.0,
+    "agent_scores": {
+      "statistical": 0.0,
+      "linguistic": 0.0,
+      "network": 0.0,
+      "claims": 0.0,
+      "visual": 0.0,
+      "seller": 0.0
+    },
+    "agent_confidence": {
+      "statistical": 1.0,
+      "linguistic": 1.0,
+      "network": 1.0,
+      "claims": 0.5,
+      "visual": 0.75,
+      "seller": 0.85
+    },
+    "contribution_points": {
+      "statistical": 0.0,
+      "linguistic": 0.0,
+      "network": 0.0,
+      "claims": 0.0,
+      "visual": 0.0,
+      "seller": 0.0
+    },
+    "critical_floor_applied": false,
+    "region": "IN"
+  },
+  "decision": {
+    "status": "no_action",
+    "queue": "None (routine monitoring)",
+    "conflict": null,
+    "recommendations": [
+      "No action \u2014 continue routine monitoring"
+    ],
+    "enforcement": "None taken automatically \u2014 all actions require human approval"
+  },
+  "summary_table": {
+    "Anomaly Detected": "None detected",
+    "Issue": "\u2014",
+    "Risk / Priority Level": "Low (0/100)",
+    "Explanation": "No anomalies detected across review, network, claim, image or seller signals.",
+    "Recommendation": "No action \u2014 continue routine monitoring"
+  },
+  "explanation": "No anomalies detected across review, network, claim, image or seller signals.",
+  "explanation_source": "template",
+  "findings": [],
+  "compliance": {
+    "findings": 0,
+    "clauses": [],
+    "regulatory_exposure": false,
+    "region": "IN",
+    "region_name": "India"
+  },
+  "agents": {
+    "statistical": {
+      "agent": "Statistical Anomaly",
+      "score": 0.0,
+      "confidence": 1.0,
+      "flags": [],
+      "metrics": {
+        "reviews": 459,
+        "max_72h_count": 18,
+        "five_star_in_window": 10,
+        "category_weekly_baseline": 27.1,
+        "spike_vs_weekly_baseline_x": 0.7,
+        "spike_vs_expected_72h_x": 1.6,
+        "five_star_share": 0.562,
+        "category_five_star_share": 0.668,
+        "rating_js_divergence": 0.008,
+        "hour_js_divergence": 0.021,
+        "burst_share": 0.039,
+        "window_start_utc": "2026-07-07T08:20:07+00:00",
+        "window_end_utc": "2026-07-10T07:17:40+00:00",
+        "sub_scores": {
+          "volume": 0.0,
+          "rating_skew": 0.0,
+          "timing": 0.0,
+          "price": 0.0
+        }
+      },
+      "summary": "Peak 18 reviews/72h vs baseline 27/week; 56% five-star."
+    },
+    "linguistic": {
+      "agent": "Linguistic Pattern",
+      "score": 0.0,
+      "confidence": 1.0,
+      "flags": [],
+      "metrics": {
+        "reviews": 459,
+        "authenticity_score": 1.0,
+        "near_duplicate_share": 0.0,
+        "templated_clusters": 0,
+        "largest_cluster": 0,
+        "generic_nonspecific_share": 0.0,
+        "specific_detail_share": 0.882,
+        "incentive_disclosure_share": 0.0,
+        "flagged_review_ids": []
+      },
+      "summary": "Linguistic authenticity score 1.00/1.0"
+    },
+    "network": {
+      "agent": "Reviewer Network",
+      "score": 0.0,
+      "confidence": 1.0,
+      "flags": [],
+      "metrics": {
+        "reviewers": 459,
+        "ring_clusters": 0,
+        "ring_accounts": 0,
+        "ring_share": 0.0,
+        "exclusive_share": 0.0,
+        "linked_sellers": {},
+        "network_exclusive_share": 0.0,
+        "creation_window_share": 0.013,
+        "low_diversity_share": 0.0,
+        "ring_assignment": {}
+      },
+      "summary": "0 of 459 reviewers in coordinated clusters; linked sellers: none"
+    },
+    "claims": {
+      "agent": "Product Claim Verification",
+      "score": 0.0,
+      "confidence": 0.5,
+      "flags": [],
+      "metrics": {
+        "claims_found": [],
+        "brand_checks": [],
+        "unverified": 0
+      },
+      "summary": "0 claims extracted, 0 unverified"
+    },
+    "visual": {
+      "agent": "Visual Counterfeit Signal",
+      "score": 0.0,
+      "confidence": 0.75,
+      "flags": [],
+      "metrics": {
+        "image_hash": "20022202849209c2132216b3253744b348b340b740b340b340b405b41e4c0696",
+        "reuse_matches": 0,
+        "unrelated_sellers_reusing": 0,
+        "brand_matches": [],
+        "logo_stitching_check": "not assessed \u2014 no close-up brand reference images on file"
+      },
+      "summary": "Image appears original"
+    },
+    "seller": {
+      "agent": "Seller Risk Correlation",
+      "score": 0.0,
+      "confidence": 0.85,
+      "flags": [],
+      "metrics": {
+        "seller_account_age_days": 520,
+        "seller_total_reviews": 1121,
+        "listings": 2,
+        "reviews_per_day": 2.16,
+        "velocity_vs_category_x": 0.6,
+        "flags_30d": 0,
+        "warnings_30d": 0,
+        "rapid_relists": 0,
+        "seller_risk_tier": "Low",
+        "seller_region": "IN"
+      },
+      "summary": "Seller Urban Threads (520d old) \u2014 risk tier Low"
+    }
+  },
+  "case_memory": {
+    "k": 25,
+    "outcome_distribution": {
+      "cleared": 0.92,
+      "confirmed review fraud": 0.08
+    },
+    "headline": "92% of the 25 most similar past cases were cleared",
+    "nearest": [
+      {
+        "case_id": "C0274",
+        "category": "bags",
+        "outcome": "cleared",
+        "closed_on": "2025-07-07",
+        "distance": 0.151
+      },
+      {
+        "case_id": "C0331",
+        "category": "electronics",
+        "outcome": "cleared",
+        "closed_on": "2025-03-17",
+        "distance": 0.175
+      },
+      {
+        "case_id": "C0004",
+        "category": "bags",
+        "outcome": "cleared",
+        "closed_on": "2024-11-23",
+        "distance": 0.175
+      },
+      {
+        "case_id": "C0046",
+        "category": "apparel",
+        "outcome": "cleared",
+        "closed_on": "2025-10-25",
+        "distance": 0.175
+      },
+      {
+        "case_id": "C0250",
+        "category": "bags",
+        "outcome": "confirmed_review_fraud",
+        "closed_on": "2025-03-06",
+        "distance": 0.207
+      }
+    ]
+  },
+  "trace": [
+    {
+      "agent": "1 \u00b7 Review & Metadata Ingestion",
+      "ms": 12.8
+    },
+    {
+      "agent": "5 \u00b7 Product Claim Verification",
+      "ms": 6.0
+    },
+    {
+      "agent": "6 \u00b7 Visual Counterfeit Signal",
+      "ms": 37.1
+    },
+    {
+      "agent": "3 \u00b7 Linguistic Pattern",
+      "ms": 160.8
+    },
+    {
+      "agent": "2 \u00b7 Statistical Anomaly Detection",
+      "ms": 161.7
+    },
+    {
+      "agent": "4 \u00b7 Reviewer Network",
+      "ms": 342.0
+    },
+    {
+      "agent": "7 \u00b7 Seller Risk Correlation",
+      "ms": 4.1
+    },
+    {
+      "agent": "8 \u00b7 Compliance Mapping",
+      "ms": 0.3
+    },
+    {
+      "agent": "9 \u00b7 Trust Risk Scoring",
+      "ms": 0.2
+    },
+    {
+      "agent": "10 \u00b7 Orchestrator",
+      "ms": 5.6
+    }
+  ]
+}

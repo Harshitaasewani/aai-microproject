@@ -1,0 +1,16 @@
+{
+  "P001": "fraud",
+  "P002": "fraud",
+  "P013": "fraud",
+  "P003": "suspicious",
+  "P004": "counterfeit",
+  "P006": "clean",
+  "P005": "clean",
+  "P008": "clean",
+  "P009": "clean",
+  "P010": "clean",
+  "P011": "clean",
+  "P012": "clean",
+  "P014": "clean",
+  "P015": "clean"
+}

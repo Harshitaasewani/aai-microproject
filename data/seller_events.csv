@@ -1,0 +1,8 @@
+seller_id,date,event,listing_id,note
+S001,2026-10-04,flag,L-9001,Review burst on prior listing
+S001,2026-10-13,flag,L-9002,Unverified material claim
+S001,2026-10-14,takedown,L-9001,Listing removed after flag
+S001,2026-10-16,relist,L-9003,Near-identical listing created
+S002,2026-10-08,flag,L-9101,Suspicious review velocity
+S004,2026-09-30,warning,L-9201,Brand complaint received
+S007,2025-09-15,warning,L-9301,Late shipping (resolved)

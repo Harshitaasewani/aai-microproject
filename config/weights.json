@@ -1,0 +1,6 @@
+{
+  "_note": "Signal-category weights for the Trust Risk Scoring Agent (severity of each signal family).",
+  "weights": {"statistical": 1.0, "linguistic": 0.9, "network": 1.2, "claims": 0.8, "visual": 0.9, "seller": 1.0},
+  "blend": {"weighted_mean": 0.65, "top2_mean": 0.35},
+  "critical_floor": {"min_confidence": 0.7, "floor_score": 55}
+}

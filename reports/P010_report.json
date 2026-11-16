@@ -1,0 +1,345 @@
+{
+  "case_id": "CASE-P010-20261020",
+  "generated_at_utc": "2026-10-20T17:50:41+00:00",
+  "as_of_utc": "2026-10-20T12:00:00+00:00",
+  "region": "US",
+  "product": {
+    "product_id": "P010",
+    "title": "Stride Running Shoes",
+    "category": "footwear",
+    "seller_id": "S010",
+    "seller_name": "Stride Co",
+    "seller_region": "US",
+    "seller_account_age_days": 800,
+    "reviews": 695,
+    "avg_rating": 4.05,
+    "verified_purchase_rate": 0.9,
+    "reviewer_account_age_avg_days": 1035.2,
+    "reviewer_account_age_median_days": 1075.4,
+    "reviewer_categories_avg": 7.23,
+    "first_review_utc": "2026-01-13T09:39:43+00:00",
+    "last_review_utc": "2026-10-19T21:21:33+00:00",
+    "current_price_inr": 3149
+  },
+  "data_quality": [],
+  "risk_score": 1.6,
+  "tier": "Low",
+  "scoring": {
+    "risk_score": 1.6,
+    "tier": "Low",
+    "weighted_mean": 0.009,
+    "top2_mean": 0.029,
+    "agent_scores": {
+      "statistical": 0.05,
+      "linguistic": 0.01,
+      "network": 0.0,
+      "claims": 0.0,
+      "visual": 0.0,
+      "seller": 0.0
+    },
+    "agent_confidence": {
+      "statistical": 0.6,
+      "linguistic": 1.0,
+      "network": 1.0,
+      "claims": 0.5,
+      "visual": 0.75,
+      "seller": 0.85
+    },
+    "contribution_points": {
+      "statistical": 0.4,
+      "linguistic": 0.1,
+      "network": 0.0,
+      "claims": 0.0,
+      "visual": 0.0,
+      "seller": 0.0
+    },
+    "critical_floor_applied": false,
+    "region": "US"
+  },
+  "decision": {
+    "status": "no_action",
+    "queue": "None (routine monitoring)",
+    "conflict": null,
+    "recommendations": [
+      "Hold suspected reviews (~1% of total) out of the star rating pending human review"
+    ],
+    "enforcement": "None taken automatically \u2014 all actions require human approval"
+  },
+  "summary_table": {
+    "Anomaly Detected": "5 reviews (1%) from different accounts fall into 1 templated cluster; largest has 5 reviews. 41 reviews share the phrase pattern \"is my second purchase from this\"",
+    "Issue": "5 reviews (1%) from different accounts fall into 1 templated cluster; largest has 5 reviews. 41 reviews share the phrase pattern \"is my second purchase from this\"",
+    "Risk / Priority Level": "Low (2/100)",
+    "Explanation": "Evidence is consistent with near-duplicate review text across accounts.",
+    "Recommendation": "Hold suspected reviews (~1% of total) out of the star rating pending human review"
+  },
+  "explanation": "Evidence is consistent with near-duplicate review text across accounts.",
+  "explanation_source": "template",
+  "findings": [
+    {
+      "agent": "Linguistic Pattern",
+      "agent_key": "linguistic",
+      "flag_type": "near_duplicate_text",
+      "title": "Near-duplicate review text across accounts",
+      "detail": "5 reviews (1%) from different accounts fall into 1 templated cluster; largest has 5 reviews. 41 reviews share the phrase pattern \"is my second purchase from this\"",
+      "severity": "medium",
+      "confidence": 1.0,
+      "policy_clause": "Policy 3.4: Inauthentic Review Content",
+      "policy_category": "Review integrity",
+      "regulatory_exposure": false,
+      "regulatory_reference": "FTC Trade Regulation Rule on Consumer Reviews and Testimonials (16 CFR Part 465)",
+      "evidence": [
+        {
+          "cluster": 1,
+          "size": 5,
+          "example": "This is my second purchase from this shop. There is plenty of room for my wide feet. But the insole slides around inside. Overall decent.",
+          "review_ids": [
+            "RV002687",
+            "RV002665",
+            "RV002686",
+            "RV002682",
+            "RV002676"
+          ]
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_sha256": "9130e9c2d623d8467fe184eea333fbaaf49b620ea89d128b174f0470913860a6",
+      "recorded_at_utc": "2026-10-20T17:50:41+00:00",
+      "finding_id": "F-001"
+    }
+  ],
+  "compliance": {
+    "findings": 1,
+    "clauses": [
+      "Policy 3.4: Inauthentic Review Content"
+    ],
+    "regulatory_exposure": false,
+    "region": "US",
+    "region_name": "United States"
+  },
+  "agents": {
+    "statistical": {
+      "agent": "Statistical Anomaly",
+      "score": 0.048,
+      "confidence": 0.6,
+      "flags": [],
+      "metrics": {
+        "reviews": 695,
+        "max_72h_count": 16,
+        "five_star_in_window": 7,
+        "category_weekly_baseline": 15.0,
+        "spike_vs_weekly_baseline_x": 1.1,
+        "spike_vs_expected_72h_x": 2.5,
+        "five_star_share": 0.499,
+        "category_five_star_share": 0.5,
+        "rating_js_divergence": 0.017,
+        "hour_js_divergence": 0.056,
+        "burst_share": 0.023,
+        "window_start_utc": "2026-05-15T21:42:00+00:00",
+        "window_end_utc": "2026-05-18T20:25:35+00:00",
+        "sub_scores": {
+          "volume": 0.0,
+          "rating_skew": 0.0,
+          "timing": 0.07,
+          "price": 0.0
+        }
+      },
+      "summary": "Peak 16 reviews/72h vs baseline 15/week; 50% five-star."
+    },
+    "linguistic": {
+      "agent": "Linguistic Pattern",
+      "score": 0.011,
+      "confidence": 1.0,
+      "flags": [
+        {
+          "flag_type": "near_duplicate_text",
+          "title": "Near-duplicate review text across accounts",
+          "detail": "5 reviews (1%) from different accounts fall into 1 templated cluster; largest has 5 reviews. 41 reviews share the phrase pattern \"is my second purchase from this\"",
+          "severity": "medium",
+          "evidence": [
+            {
+              "cluster": 1,
+              "size": 5,
+              "example": "This is my second purchase from this shop. There is plenty of room for my wide feet. But the insole slides around inside. Overall decent.",
+              "review_ids": [
+                "RV002687",
+                "RV002665",
+                "RV002686",
+                "RV002682",
+                "RV002676"
+              ]
+            }
+          ]
+        }
+      ],
+      "metrics": {
+        "reviews": 695,
+        "authenticity_score": 0.99,
+        "near_duplicate_share": 0.007,
+        "templated_clusters": 1,
+        "largest_cluster": 5,
+        "generic_nonspecific_share": 0.0,
+        "specific_detail_share": 0.738,
+        "incentive_disclosure_share": 0.0,
+        "flagged_review_ids": [
+          "RV002665",
+          "RV002676",
+          "RV002682",
+          "RV002686",
+          "RV002687"
+        ]
+      },
+      "summary": "Linguistic authenticity score 0.99/1.0"
+    },
+    "network": {
+      "agent": "Reviewer Network",
+      "score": 0.0,
+      "confidence": 1.0,
+      "flags": [],
+      "metrics": {
+        "reviewers": 695,
+        "ring_clusters": 0,
+        "ring_accounts": 0,
+        "ring_share": 0.0,
+        "exclusive_share": 0.0,
+        "linked_sellers": {},
+        "network_exclusive_share": 0.0,
+        "creation_window_share": 0.014,
+        "low_diversity_share": 0.0,
+        "ring_assignment": {}
+      },
+      "summary": "0 of 695 reviewers in coordinated clusters; linked sellers: none"
+    },
+    "claims": {
+      "agent": "Product Claim Verification",
+      "score": 0.0,
+      "confidence": 0.5,
+      "flags": [],
+      "metrics": {
+        "claims_found": [],
+        "brand_checks": [],
+        "unverified": 0
+      },
+      "summary": "0 claims extracted, 0 unverified"
+    },
+    "visual": {
+      "agent": "Visual Counterfeit Signal",
+      "score": 0.0,
+      "confidence": 0.75,
+      "flags": [],
+      "metrics": {
+        "image_hash": "001a005a0858001a02ba02bc02b622b362b312b382b7023e0c0c001c000e000c",
+        "reuse_matches": 0,
+        "unrelated_sellers_reusing": 0,
+        "brand_matches": [],
+        "logo_stitching_check": "not assessed \u2014 no close-up brand reference images on file"
+      },
+      "summary": "Image appears original"
+    },
+    "seller": {
+      "agent": "Seller Risk Correlation",
+      "score": 0.001,
+      "confidence": 0.85,
+      "flags": [],
+      "metrics": {
+        "seller_account_age_days": 800,
+        "seller_total_reviews": 695,
+        "listings": 1,
+        "reviews_per_day": 0.87,
+        "velocity_vs_category_x": 0.4,
+        "flags_30d": 0,
+        "warnings_30d": 0,
+        "rapid_relists": 0,
+        "seller_risk_tier": "Low",
+        "seller_region": "US"
+      },
+      "summary": "Seller Stride Co (800d old) \u2014 risk tier Low"
+    }
+  },
+  "case_memory": {
+    "k": 25,
+    "outcome_distribution": {
+      "cleared": 0.92,
+      "confirmed review fraud": 0.08
+    },
+    "headline": "92% of the 25 most similar past cases were cleared",
+    "nearest": [
+      {
+        "case_id": "C0331",
+        "category": "electronics",
+        "outcome": "cleared",
+        "closed_on": "2025-03-17",
+        "distance": 0.129
+      },
+      {
+        "case_id": "C0046",
+        "category": "apparel",
+        "outcome": "cleared",
+        "closed_on": "2025-10-25",
+        "distance": 0.135
+      },
+      {
+        "case_id": "C0274",
+        "category": "bags",
+        "outcome": "cleared",
+        "closed_on": "2025-07-07",
+        "distance": 0.148
+      },
+      {
+        "case_id": "C0004",
+        "category": "bags",
+        "outcome": "cleared",
+        "closed_on": "2024-11-23",
+        "distance": 0.18
+      },
+      {
+        "case_id": "C0017",
+        "category": "footwear",
+        "outcome": "cleared",
+        "closed_on": "2025-05-14",
+        "distance": 0.192
+      }
+    ]
+  },
+  "trace": [
+    {
+      "agent": "1 \u00b7 Review & Metadata Ingestion",
+      "ms": 11.8
+    },
+    {
+      "agent": "5 \u00b7 Product Claim Verification",
+      "ms": 6.0
+    },
+    {
+      "agent": "6 \u00b7 Visual Counterfeit Signal",
+      "ms": 62.2
+    },
+    {
+      "agent": "2 \u00b7 Statistical Anomaly Detection",
+      "ms": 87.4
+    },
+    {
+      "agent": "3 \u00b7 Linguistic Pattern",
+      "ms": 182.0
+    },
+    {
+      "agent": "4 \u00b7 Reviewer Network",
+      "ms": 417.9
+    },
+    {
+      "agent": "7 \u00b7 Seller Risk Correlation",
+      "ms": 2.8
+    },
+    {
+      "agent": "8 \u00b7 Compliance Mapping",
+      "ms": 0.3
+    },
+    {
+      "agent": "9 \u00b7 Trust Risk Scoring",
+      "ms": 0.2
+    },
+    {
+      "agent": "10 \u00b7 Orchestrator",
+      "ms": 4.5
+    }
+  ]
+}

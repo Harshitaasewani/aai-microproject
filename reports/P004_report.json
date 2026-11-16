@@ -1,0 +1,488 @@
+{
+  "case_id": "CASE-P004-20261020",
+  "generated_at_utc": "2026-10-20T17:50:39+00:00",
+  "as_of_utc": "2026-10-20T12:00:00+00:00",
+  "region": "IN",
+  "product": {
+    "product_id": "P004",
+    "title": "LuxeCo Monogram Wallet",
+    "category": "bags",
+    "seller_id": "S004",
+    "seller_name": "Metro Luxe Deals",
+    "seller_region": "IN",
+    "seller_account_age_days": 60,
+    "reviews": 82,
+    "avg_rating": 3.1,
+    "verified_purchase_rate": 0.9,
+    "reviewer_account_age_avg_days": 1106.0,
+    "reviewer_account_age_median_days": 1097.1,
+    "reviewer_categories_avg": 7.5,
+    "first_review_utc": "2026-08-26T05:12:09+00:00",
+    "last_review_utc": "2026-10-19T10:00:46+00:00",
+    "current_price_inr": 2374
+  },
+  "data_quality": [],
+  "risk_score": 55.0,
+  "tier": "High",
+  "scoring": {
+    "risk_score": 55.0,
+    "tier": "High",
+    "weighted_mean": 0.3,
+    "top2_mean": 0.992,
+    "agent_scores": {
+      "statistical": 0.06,
+      "linguistic": 0.0,
+      "network": 0.0,
+      "claims": 0.98,
+      "visual": 1.0,
+      "seller": 0.26
+    },
+    "agent_confidence": {
+      "statistical": 1.0,
+      "linguistic": 1.0,
+      "network": 1.0,
+      "claims": 0.8,
+      "visual": 0.75,
+      "seller": 0.85
+    },
+    "contribution_points": {
+      "statistical": 0.7,
+      "linguistic": 0.0,
+      "network": 0.0,
+      "claims": 7.8,
+      "visual": 8.3,
+      "seller": 2.7
+    },
+    "critical_floor_applied": true,
+    "region": "IN"
+  },
+  "decision": {
+    "status": "escalate",
+    "queue": "Legal / IP Enforcement",
+    "conflict": null,
+    "recommendations": [
+      "Route to brand-protection / legal: request proof of authenticity and brand authorization from seller",
+      "Request supporting documents for: \"genuine leather\""
+    ],
+    "enforcement": "None taken automatically \u2014 all actions require human approval"
+  },
+  "summary_table": {
+    "Anomaly Detected": "Listing uses brand \"LuxeCo\" and claims authenticity; seller S004 is not an authorized LuxeCo reseller",
+    "Issue": "Listing image matches LuxeCo reference imagery (distance 0/256) but seller is not an authorized LuxeCo reseller \u2014 possible counterfeit / IP infringement",
+    "Risk / Priority Level": "High (55/100)",
+    "Explanation": "Evidence is consistent with branded listing from unauthorized seller, brand imagery on unauthorized listing, price implausible for claimed brand, unverified material claim. The listing uses protected brand imagery and authenticity claims from a seller who is not an authorized reseller, at a price far below brand MSRP \u2014 signals consistent with counterfeit goods. Material/origin/certification claims in the listing have no supporting documents on file.",
+    "Recommendation": "Route to brand-protection / legal: request proof of authenticity and brand authorization from seller; Request supporting documents for: \"genuine leather\""
+  },
+  "explanation": "Evidence is consistent with branded listing from unauthorized seller, brand imagery on unauthorized listing, price implausible for claimed brand, unverified material claim. The listing uses protected brand imagery and authenticity claims from a seller who is not an authorized reseller, at a price far below brand MSRP \u2014 signals consistent with counterfeit goods. Material/origin/certification claims in the listing have no supporting documents on file.",
+  "explanation_source": "template",
+  "findings": [
+    {
+      "agent": "Product Claim Verification",
+      "agent_key": "claims",
+      "flag_type": "unauthorized_brand",
+      "title": "Branded listing from unauthorized seller",
+      "detail": "Listing uses brand \"LuxeCo\" and claims authenticity; seller S004 is not an authorized LuxeCo reseller",
+      "severity": "critical",
+      "confidence": 0.8,
+      "policy_clause": "Policy 5.1: Intellectual Property Infringement / Counterfeit",
+      "policy_category": "IP & authenticity",
+      "regulatory_exposure": true,
+      "regulatory_reference": "Trade Marks Act, 1999",
+      "evidence": [
+        {
+          "brand": "LuxeCo",
+          "authorized_sellers": "S900;S901"
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_sha256": "93d8c11245a9dc476d2f65481708c5c6021e859d99a880c8f996efbd00fc71d9",
+      "recorded_at_utc": "2026-10-20T17:50:39+00:00",
+      "finding_id": "F-001"
+    },
+    {
+      "agent": "Visual Counterfeit Signal",
+      "agent_key": "visual",
+      "flag_type": "brand_image_match",
+      "title": "Brand imagery on unauthorized listing",
+      "detail": "Listing image matches LuxeCo reference imagery (distance 0/256) but seller is not an authorized LuxeCo reseller \u2014 possible counterfeit / IP infringement",
+      "severity": "critical",
+      "confidence": 0.75,
+      "policy_clause": "Policy 5.1: Intellectual Property Infringement / Counterfeit",
+      "policy_category": "IP & authenticity",
+      "regulatory_exposure": true,
+      "regulatory_reference": "Trade Marks Act, 1999",
+      "evidence": [
+        {
+          "listing_image": "P004.png",
+          "reference": "brand_ref_luxeco.png",
+          "hamming_distance": 0
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_sha256": "03e2612ec11d0f5ff25c177daa175a8082e178bfc9a6d72c4f722d315267befc",
+      "recorded_at_utc": "2026-10-20T17:50:39+00:00",
+      "finding_id": "F-002"
+    },
+    {
+      "agent": "Product Claim Verification",
+      "agent_key": "claims",
+      "flag_type": "implausible_price",
+      "title": "Price implausible for claimed brand",
+      "detail": "Listed at \u20b92,374 \u2014 5% of LuxeCo MSRP \u20b945,000",
+      "severity": "high",
+      "confidence": 0.8,
+      "policy_clause": "Policy 5.1: Intellectual Property Infringement / Counterfeit",
+      "policy_category": "IP & authenticity",
+      "regulatory_exposure": true,
+      "regulatory_reference": "Trade Marks Act, 1999",
+      "evidence": [],
+      "evidence_count": 0,
+      "evidence_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "recorded_at_utc": "2026-10-20T17:50:39+00:00",
+      "finding_id": "F-003"
+    },
+    {
+      "agent": "Product Claim Verification",
+      "agent_key": "claims",
+      "flag_type": "unverified_claim",
+      "title": "Unverified material claim",
+      "detail": "Listing claims \"genuine leather\" but no supplier/certification document is on file",
+      "severity": "high",
+      "confidence": 0.8,
+      "policy_clause": "Policy 4.2: Deceptive Product Description",
+      "policy_category": "Listing accuracy",
+      "regulatory_exposure": false,
+      "regulatory_reference": "Consumer Protection Act, 2019 (misleading advertisement); Consumer Protection (E-Commerce) Rules, 2020",
+      "evidence": [
+        {
+          "listing_text": "genuine leather",
+          "documents_on_file": []
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_sha256": "5623078f98b9e4e9161725a5df86c014b2129eda298bc02cdf1417e5f5ca26a0",
+      "recorded_at_utc": "2026-10-20T17:50:39+00:00",
+      "finding_id": "F-004"
+    },
+    {
+      "agent": "Seller Risk Correlation",
+      "agent_key": "seller",
+      "flag_type": "prior_flags",
+      "title": "Prior flags / warnings on file",
+      "detail": "0 flag(s) and 1 warning(s) in the last 30 days",
+      "severity": "medium",
+      "confidence": 0.85,
+      "policy_clause": "Policy 7.2: Seller Integrity / Repeat Offender",
+      "policy_category": "Seller conduct",
+      "regulatory_exposure": false,
+      "regulatory_reference": null,
+      "evidence": [
+        {
+          "seller_id": "S004",
+          "date": "2026-09-30",
+          "event": "warning",
+          "listing_id": "L-9201",
+          "note": "Brand complaint received"
+        }
+      ],
+      "evidence_count": 1,
+      "evidence_sha256": "66f88d63b8f0f18889383eeb2b27c88bce29e4feafd98ebcacca50e395056dd3",
+      "recorded_at_utc": "2026-10-20T17:50:39+00:00",
+      "finding_id": "F-005"
+    }
+  ],
+  "compliance": {
+    "findings": 5,
+    "clauses": [
+      "Policy 4.2: Deceptive Product Description",
+      "Policy 5.1: Intellectual Property Infringement / Counterfeit",
+      "Policy 7.2: Seller Integrity / Repeat Offender"
+    ],
+    "regulatory_exposure": true,
+    "region": "IN",
+    "region_name": "India"
+  },
+  "agents": {
+    "statistical": {
+      "agent": "Statistical Anomaly",
+      "score": 0.055,
+      "confidence": 1.0,
+      "flags": [],
+      "metrics": {
+        "reviews": 82,
+        "max_72h_count": 14,
+        "five_star_in_window": 3,
+        "category_weekly_baseline": 27.1,
+        "spike_vs_weekly_baseline_x": 0.5,
+        "spike_vs_expected_72h_x": 1.2,
+        "five_star_share": 0.268,
+        "category_five_star_share": 0.662,
+        "rating_js_divergence": 0.098,
+        "hour_js_divergence": 0.048,
+        "burst_share": 0.171,
+        "window_start_utc": "2026-08-28T10:44:55+00:00",
+        "window_end_utc": "2026-08-31T07:20:41+00:00",
+        "sub_scores": {
+          "volume": 0.0,
+          "rating_skew": 0.0,
+          "timing": 0.08,
+          "price": 0.0
+        }
+      },
+      "summary": "Peak 14 reviews/72h vs baseline 27/week; 27% five-star."
+    },
+    "linguistic": {
+      "agent": "Linguistic Pattern",
+      "score": 0.0,
+      "confidence": 1.0,
+      "flags": [],
+      "metrics": {
+        "reviews": 82,
+        "authenticity_score": 1.0,
+        "near_duplicate_share": 0.0,
+        "templated_clusters": 0,
+        "largest_cluster": 0,
+        "generic_nonspecific_share": 0.0,
+        "specific_detail_share": 0.951,
+        "incentive_disclosure_share": 0.0,
+        "flagged_review_ids": []
+      },
+      "summary": "Linguistic authenticity score 1.00/1.0"
+    },
+    "network": {
+      "agent": "Reviewer Network",
+      "score": 0.0,
+      "confidence": 1.0,
+      "flags": [],
+      "metrics": {
+        "reviewers": 82,
+        "ring_clusters": 0,
+        "ring_accounts": 0,
+        "ring_share": 0.0,
+        "exclusive_share": 0.0,
+        "linked_sellers": {},
+        "network_exclusive_share": 0.0,
+        "creation_window_share": 0.037,
+        "low_diversity_share": 0.0,
+        "ring_assignment": {}
+      },
+      "summary": "0 of 82 reviewers in coordinated clusters; linked sellers: none"
+    },
+    "claims": {
+      "agent": "Product Claim Verification",
+      "score": 0.984,
+      "confidence": 0.8,
+      "flags": [
+        {
+          "flag_type": "unverified_claim",
+          "title": "Unverified material claim",
+          "detail": "Listing claims \"genuine leather\" but no supplier/certification document is on file",
+          "severity": "high",
+          "evidence": [
+            {
+              "listing_text": "genuine leather",
+              "documents_on_file": []
+            }
+          ]
+        },
+        {
+          "flag_type": "unauthorized_brand",
+          "title": "Branded listing from unauthorized seller",
+          "detail": "Listing uses brand \"LuxeCo\" and claims authenticity; seller S004 is not an authorized LuxeCo reseller",
+          "severity": "critical",
+          "evidence": [
+            {
+              "brand": "LuxeCo",
+              "authorized_sellers": "S900;S901"
+            }
+          ]
+        },
+        {
+          "flag_type": "implausible_price",
+          "title": "Price implausible for claimed brand",
+          "detail": "Listed at \u20b92,374 \u2014 5% of LuxeCo MSRP \u20b945,000",
+          "severity": "high",
+          "evidence": []
+        }
+      ],
+      "metrics": {
+        "claims_found": [
+          {
+            "claim": "genuine leather",
+            "claim_key": "genuine leather",
+            "type": "material",
+            "verified": false,
+            "documents": []
+          }
+        ],
+        "brand_checks": [
+          {
+            "brand": "LuxeCo",
+            "authorized_seller": false,
+            "price_inr": 2374,
+            "brand_msrp_inr": 45000,
+            "price_to_msrp": 0.053
+          }
+        ],
+        "unverified": 1
+      },
+      "summary": "1 claims extracted, 1 unverified; brand check: LuxeCo"
+    },
+    "visual": {
+      "agent": "Visual Counterfeit Signal",
+      "score": 1.0,
+      "confidence": 0.75,
+      "flags": [
+        {
+          "flag_type": "brand_image_match",
+          "title": "Brand imagery on unauthorized listing",
+          "detail": "Listing image matches LuxeCo reference imagery (distance 0/256) but seller is not an authorized LuxeCo reseller \u2014 possible counterfeit / IP infringement",
+          "severity": "critical",
+          "evidence": [
+            {
+              "listing_image": "P004.png",
+              "reference": "brand_ref_luxeco.png",
+              "hamming_distance": 0
+            }
+          ]
+        }
+      ],
+      "metrics": {
+        "image_hash": "55545554aaabaaab55545554aaa3aaa355545554aaabaaab55545554aaabaaab",
+        "reuse_matches": 0,
+        "unrelated_sellers_reusing": 0,
+        "brand_matches": [
+          {
+            "brand": "LuxeCo",
+            "reference_image": "brand_ref_luxeco.png",
+            "hamming_distance": 0,
+            "authorized_seller": false
+          }
+        ],
+        "logo_stitching_check": "not assessed \u2014 no close-up brand reference images on file"
+      },
+      "summary": "Image appears original; matches LuxeCo reference"
+    },
+    "seller": {
+      "agent": "Seller Risk Correlation",
+      "score": 0.26,
+      "confidence": 0.85,
+      "flags": [
+        {
+          "flag_type": "prior_flags",
+          "title": "Prior flags / warnings on file",
+          "detail": "0 flag(s) and 1 warning(s) in the last 30 days",
+          "severity": "medium",
+          "evidence": [
+            {
+              "seller_id": "S004",
+              "date": "2026-09-30",
+              "event": "warning",
+              "listing_id": "L-9201",
+              "note": "Brand complaint received"
+            }
+          ]
+        }
+      ],
+      "metrics": {
+        "seller_account_age_days": 60,
+        "seller_total_reviews": 82,
+        "listings": 1,
+        "reviews_per_day": 1.37,
+        "velocity_vs_category_x": 0.4,
+        "flags_30d": 0,
+        "warnings_30d": 1,
+        "rapid_relists": 0,
+        "seller_risk_tier": "Low",
+        "seller_region": "IN"
+      },
+      "summary": "Seller Metro Luxe Deals (60d old) \u2014 risk tier Low"
+    }
+  },
+  "case_memory": {
+    "k": 25,
+    "outcome_distribution": {
+      "confirmed counterfeit": 1.0
+    },
+    "headline": "100% of the 25 most similar past cases were confirmed counterfeit",
+    "nearest": [
+      {
+        "case_id": "C0069",
+        "category": "electronics",
+        "outcome": "confirmed_counterfeit",
+        "closed_on": "2025-02-13",
+        "distance": 0.303
+      },
+      {
+        "case_id": "C0081",
+        "category": "home",
+        "outcome": "confirmed_counterfeit",
+        "closed_on": "2026-06-04",
+        "distance": 0.318
+      },
+      {
+        "case_id": "C0180",
+        "category": "footwear",
+        "outcome": "confirmed_counterfeit",
+        "closed_on": "2025-12-20",
+        "distance": 0.381
+      },
+      {
+        "case_id": "C0141",
+        "category": "electronics",
+        "outcome": "confirmed_counterfeit",
+        "closed_on": "2025-01-09",
+        "distance": 0.403
+      },
+      {
+        "case_id": "C0065",
+        "category": "electronics",
+        "outcome": "confirmed_counterfeit",
+        "closed_on": "2026-02-04",
+        "distance": 0.409
+      }
+    ]
+  },
+  "trace": [
+    {
+      "agent": "1 \u00b7 Review & Metadata Ingestion",
+      "ms": 10.7
+    },
+    {
+      "agent": "5 \u00b7 Product Claim Verification",
+      "ms": 4.2
+    },
+    {
+      "agent": "3 \u00b7 Linguistic Pattern",
+      "ms": 35.9
+    },
+    {
+      "agent": "6 \u00b7 Visual Counterfeit Signal",
+      "ms": 27.3
+    },
+    {
+      "agent": "2 \u00b7 Statistical Anomaly Detection",
+      "ms": 93.4
+    },
+    {
+      "agent": "4 \u00b7 Reviewer Network",
+      "ms": 107.7
+    },
+    {
+      "agent": "7 \u00b7 Seller Risk Correlation",
+      "ms": 3.9
+    },
+    {
+      "agent": "8 \u00b7 Compliance Mapping",
+      "ms": 0.3
+    },
+    {
+      "agent": "9 \u00b7 Trust Risk Scoring",
+      "ms": 0.1
+    },
+    {
+      "agent": "10 \u00b7 Orchestrator",
+      "ms": 4.0
+    }
+  ]
+}

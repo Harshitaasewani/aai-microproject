@@ -1,0 +1,27 @@
+{
+  "_note": "Sample marketplace policy catalogue for the prototype. Regulatory references are indicative pointers for the legal reviewer, not legal conclusions.",
+  "clauses": {
+    "3.1": {"title": "Review Manipulation", "category": "Review integrity", "regulatory_area": "fake_reviews"},
+    "3.2": {"title": "Coordinated / Fake Reviewer Accounts", "category": "Review integrity", "regulatory_area": "fake_reviews"},
+    "3.3": {"title": "Incentivized Reviews", "category": "Review integrity", "regulatory_area": "fake_reviews"},
+    "3.4": {"title": "Inauthentic Review Content", "category": "Review integrity", "regulatory_area": "fake_reviews"},
+    "4.2": {"title": "Deceptive Product Description", "category": "Listing accuracy", "regulatory_area": "misleading_claims"},
+    "4.5": {"title": "Unsubstantiated Safety / Health Claim", "category": "Product safety", "regulatory_area": "safety"},
+    "5.1": {"title": "Intellectual Property Infringement / Counterfeit", "category": "IP & authenticity", "regulatory_area": "ip"},
+    "5.3": {"title": "Misappropriated Product Imagery", "category": "IP & authenticity", "regulatory_area": "ip"},
+    "6.1": {"title": "Pricing Manipulation", "category": "Pricing", "regulatory_area": "misleading_claims"},
+    "7.2": {"title": "Seller Integrity / Repeat Offender", "category": "Seller conduct", "regulatory_area": null}
+  },
+  "flag_to_clause": {
+    "volume_spike": "3.1", "rating_skew": "3.1", "timing_cluster": "3.1",
+    "coordinated_network": "3.2", "creation_window": "3.2", "seller_exclusive_reviewers": "3.2", "low_order_diversity": "3.2",
+    "incentivized_disclosure": "3.3",
+    "near_duplicate_text": "3.4", "generic_no_detail": "3.4",
+    "unverified_claim": "4.2", "unverified_claim:safety certification": "4.5", "unverified_claim:safety/health claim": "4.5",
+    "unauthorized_brand": "5.1", "brand_image_match": "5.1", "implausible_price": "5.1",
+    "reused_image": "5.3",
+    "price_drop_during_burst": "6.1",
+    "prior_flags": "7.2", "rapid_relisting": "7.2", "young_seller_high_volume": "7.2"
+  },
+  "high_exposure_areas": ["ip", "safety"]
+}

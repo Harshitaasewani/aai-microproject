@@ -1,0 +1,33 @@
+{
+  "_note": "Region-aware rules: tier cut-offs (score >= value) and indicative regulatory references per area. Stricter regions escalate earlier.",
+  "IN": {
+    "name": "India",
+    "tiers": {"Medium": 30, "High": 55, "Critical": 75},
+    "references": {
+      "fake_reviews": "Consumer Protection Act, 2019 (unfair trade practices); BIS IS 19000:2022 online consumer reviews standard",
+      "misleading_claims": "Consumer Protection Act, 2019 (misleading advertisement); Consumer Protection (E-Commerce) Rules, 2020",
+      "safety": "BIS compulsory registration scheme for notified electronics",
+      "ip": "Trade Marks Act, 1999"
+    }
+  },
+  "EU": {
+    "name": "European Union",
+    "tiers": {"Medium": 25, "High": 50, "Critical": 70},
+    "references": {
+      "fake_reviews": "Unfair Commercial Practices Directive as amended by the Omnibus Directive (fake reviews)",
+      "misleading_claims": "Unfair Commercial Practices Directive",
+      "safety": "General Product Safety Regulation (EU) 2023/988",
+      "ip": "EU Trade Mark Regulation; Digital Services Act notice-and-action"
+    }
+  },
+  "US": {
+    "name": "United States",
+    "tiers": {"Medium": 28, "High": 52, "Critical": 72},
+    "references": {
+      "fake_reviews": "FTC Trade Regulation Rule on Consumer Reviews and Testimonials (16 CFR Part 465)",
+      "misleading_claims": "FTC Act Section 5",
+      "safety": "CPSC product safety requirements",
+      "ip": "Lanham Act (trademark counterfeiting)"
+    }
+  }
+}

@@ -1,0 +1,294 @@
+{
+  "case_id": "CASE-P009-20261020",
+  "generated_at_utc": "2026-10-20T17:50:40+00:00",
+  "as_of_utc": "2026-10-20T12:00:00+00:00",
+  "region": "EU",
+  "product": {
+    "product_id": "P009",
+    "title": "Glow Vitamin C Serum",
+    "category": "beauty",
+    "seller_id": "S009",
+    "seller_name": "Pure Skin Labs",
+    "seller_region": "EU",
+    "seller_account_age_days": 650,
+    "reviews": 666,
+    "avg_rating": 4.15,
+    "verified_purchase_rate": 0.9,
+    "reviewer_account_age_avg_days": 1000.1,
+    "reviewer_account_age_median_days": 997.1,
+    "reviewer_categories_avg": 7.42,
+    "first_review_utc": "2026-02-22T08:20:24+00:00",
+    "last_review_utc": "2026-10-19T18:05:02+00:00",
+    "current_price_inr": 899
+  },
+  "data_quality": [],
+  "risk_score": 1.4,
+  "tier": "Low",
+  "scoring": {
+    "risk_score": 1.4,
+    "tier": "Low",
+    "weighted_mean": 0.007,
+    "top2_mean": 0.027,
+    "agent_scores": {
+      "statistical": 0.05,
+      "linguistic": 0.0,
+      "network": 0.0,
+      "claims": 0.0,
+      "visual": 0.0,
+      "seller": 0.0
+    },
+    "agent_confidence": {
+      "statistical": 0.6,
+      "linguistic": 1.0,
+      "network": 1.0,
+      "claims": 0.8,
+      "visual": 0.75,
+      "seller": 0.85
+    },
+    "contribution_points": {
+      "statistical": 0.4,
+      "linguistic": 0.0,
+      "network": 0.0,
+      "claims": 0.0,
+      "visual": 0.0,
+      "seller": 0.0
+    },
+    "critical_floor_applied": false,
+    "region": "EU"
+  },
+  "decision": {
+    "status": "no_action",
+    "queue": "None (routine monitoring)",
+    "conflict": null,
+    "recommendations": [
+      "No action \u2014 continue routine monitoring"
+    ],
+    "enforcement": "None taken automatically \u2014 all actions require human approval"
+  },
+  "summary_table": {
+    "Anomaly Detected": "None detected",
+    "Issue": "\u2014",
+    "Risk / Priority Level": "Low (1/100)",
+    "Explanation": "No anomalies detected across review, network, claim, image or seller signals.",
+    "Recommendation": "No action \u2014 continue routine monitoring"
+  },
+  "explanation": "No anomalies detected across review, network, claim, image or seller signals.",
+  "explanation_source": "template",
+  "findings": [],
+  "compliance": {
+    "findings": 0,
+    "clauses": [],
+    "regulatory_exposure": false,
+    "region": "EU",
+    "region_name": "European Union"
+  },
+  "agents": {
+    "statistical": {
+      "agent": "Statistical Anomaly",
+      "score": 0.053,
+      "confidence": 0.6,
+      "flags": [],
+      "metrics": {
+        "reviews": 666,
+        "max_72h_count": 18,
+        "five_star_in_window": 11,
+        "category_weekly_baseline": 15.0,
+        "spike_vs_weekly_baseline_x": 1.2,
+        "spike_vs_expected_72h_x": 2.8,
+        "five_star_share": 0.538,
+        "category_five_star_share": 0.5,
+        "rating_js_divergence": 0.024,
+        "hour_js_divergence": 0.058,
+        "burst_share": 0.027,
+        "window_start_utc": "2026-04-28T09:37:52+00:00",
+        "window_end_utc": "2026-05-01T03:25:19+00:00",
+        "sub_scores": {
+          "volume": 0.0,
+          "rating_skew": 0.0,
+          "timing": 0.08,
+          "price": 0.0
+        }
+      },
+      "summary": "Peak 18 reviews/72h vs baseline 15/week; 54% five-star."
+    },
+    "linguistic": {
+      "agent": "Linguistic Pattern",
+      "score": 0.0,
+      "confidence": 1.0,
+      "flags": [],
+      "metrics": {
+        "reviews": 666,
+        "authenticity_score": 1.0,
+        "near_duplicate_share": 0.0,
+        "templated_clusters": 0,
+        "largest_cluster": 0,
+        "generic_nonspecific_share": 0.0,
+        "specific_detail_share": 0.752,
+        "incentive_disclosure_share": 0.0,
+        "flagged_review_ids": []
+      },
+      "summary": "Linguistic authenticity score 1.00/1.0"
+    },
+    "network": {
+      "agent": "Reviewer Network",
+      "score": 0.0,
+      "confidence": 1.0,
+      "flags": [],
+      "metrics": {
+        "reviewers": 666,
+        "ring_clusters": 0,
+        "ring_accounts": 0,
+        "ring_share": 0.0,
+        "exclusive_share": 0.0,
+        "linked_sellers": {},
+        "network_exclusive_share": 0.0,
+        "creation_window_share": 0.012,
+        "low_diversity_share": 0.0,
+        "ring_assignment": {}
+      },
+      "summary": "0 of 666 reviewers in coordinated clusters; linked sellers: none"
+    },
+    "claims": {
+      "agent": "Product Claim Verification",
+      "score": 0.0,
+      "confidence": 0.8,
+      "flags": [],
+      "metrics": {
+        "claims_found": [
+          {
+            "claim": "dermatologically tested",
+            "claim_key": "dermatologically tested",
+            "type": "safety/health claim",
+            "verified": true,
+            "documents": [
+              "DERM-TEST-118"
+            ]
+          }
+        ],
+        "brand_checks": [],
+        "unverified": 0
+      },
+      "summary": "1 claims extracted, 0 unverified"
+    },
+    "visual": {
+      "agent": "Visual Counterfeit Signal",
+      "score": 0.0,
+      "confidence": 0.75,
+      "flags": [],
+      "metrics": {
+        "image_hash": "68004c0004085c004418645a64586459645b64596459645864186824601c6804",
+        "reuse_matches": 0,
+        "unrelated_sellers_reusing": 0,
+        "brand_matches": [],
+        "logo_stitching_check": "not assessed \u2014 no close-up brand reference images on file"
+      },
+      "summary": "Image appears original"
+    },
+    "seller": {
+      "agent": "Seller Risk Correlation",
+      "score": 0.002,
+      "confidence": 0.85,
+      "flags": [],
+      "metrics": {
+        "seller_account_age_days": 650,
+        "seller_total_reviews": 666,
+        "listings": 1,
+        "reviews_per_day": 1.02,
+        "velocity_vs_category_x": 0.5,
+        "flags_30d": 0,
+        "warnings_30d": 0,
+        "rapid_relists": 0,
+        "seller_risk_tier": "Low",
+        "seller_region": "EU"
+      },
+      "summary": "Seller Pure Skin Labs (650d old) \u2014 risk tier Low"
+    }
+  },
+  "case_memory": {
+    "k": 25,
+    "outcome_distribution": {
+      "cleared": 0.92,
+      "confirmed review fraud": 0.08
+    },
+    "headline": "92% of the 25 most similar past cases were cleared",
+    "nearest": [
+      {
+        "case_id": "C0331",
+        "category": "electronics",
+        "outcome": "cleared",
+        "closed_on": "2025-03-17",
+        "distance": 0.124
+      },
+      {
+        "case_id": "C0046",
+        "category": "apparel",
+        "outcome": "cleared",
+        "closed_on": "2025-10-25",
+        "distance": 0.142
+      },
+      {
+        "case_id": "C0274",
+        "category": "bags",
+        "outcome": "cleared",
+        "closed_on": "2025-07-07",
+        "distance": 0.148
+      },
+      {
+        "case_id": "C0004",
+        "category": "bags",
+        "outcome": "cleared",
+        "closed_on": "2024-11-23",
+        "distance": 0.183
+      },
+      {
+        "case_id": "C0328",
+        "category": "apparel",
+        "outcome": "cleared",
+        "closed_on": "2026-06-12",
+        "distance": 0.196
+      }
+    ]
+  },
+  "trace": [
+    {
+      "agent": "1 \u00b7 Review & Metadata Ingestion",
+      "ms": 11.8
+    },
+    {
+      "agent": "5 \u00b7 Product Claim Verification",
+      "ms": 48.2
+    },
+    {
+      "agent": "2 \u00b7 Statistical Anomaly Detection",
+      "ms": 85.4
+    },
+    {
+      "agent": "6 \u00b7 Visual Counterfeit Signal",
+      "ms": 173.8
+    },
+    {
+      "agent": "3 \u00b7 Linguistic Pattern",
+      "ms": 210.9
+    },
+    {
+      "agent": "4 \u00b7 Reviewer Network",
+      "ms": 416.5
+    },
+    {
+      "agent": "7 \u00b7 Seller Risk Correlation",
+      "ms": 2.8
+    },
+    {
+      "agent": "8 \u00b7 Compliance Mapping",
+      "ms": 0.2
+    },
+    {
+      "agent": "9 \u00b7 Trust Risk Scoring",
+      "ms": 0.1
+    },
+    {
+      "agent": "10 \u00b7 Orchestrator",
+      "ms": 4.1
+    }
+  ]
+}

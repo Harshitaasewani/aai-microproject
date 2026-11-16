@@ -1,0 +1,15 @@
+product_id,seller_id,title,category,listed_date,price_inr,image_file,description
+P001,S001,Aria Leather Crossbody Bag,bags,2026-09-30,3999,P001.png,"Premium genuine leather crossbody bag, handcrafted in Italy. Adjustable strap, gold-tone zipper, two inner pockets. Perfect for daily use."
+P002,S001,Aria Mini Tote,bags,2026-10-05,2999,P002.png,Compact tote in genuine leather with magnetic snap closure and fabric lining.
+P013,S002,Velora Canvas Belt,bags,2026-09-17,1499,P013.png,Pure cotton canvas belt with antique brass buckle. One size fits most.
+P003,S003,Pulse Wireless Earbuds,electronics,2026-04-23,2499,P003.png,"Bluetooth 5.3 earbuds with 30 hour battery, IPX5 water resistance, BIS certified charging case."
+P004,S004,LuxeCo Monogram Wallet,bags,2026-08-23,2499,P004.png,100% authentic LuxeCo monogram wallet in genuine leather. Original brand packaging included.
+P006,S005,Terra Ceramic Mug,home,2026-09-22,599,P006.png,"Handmade stoneware mug, 350 ml, microwave safe glaze."
+P005,S008,Nimbus Cotton Tee,apparel,2026-02-02,799,P005.png,"Crew neck t-shirt, 100% cotton, regular fit."
+P008,S007,Volt 20000mAh Power Bank,electronics,2025-12-24,1899,P008.png,"20000 mAh power bank with 22.5W fast charging, BIS certified."
+P009,S009,Glow Vitamin C Serum,beauty,2026-02-22,899,P009.png,"10% vitamin C serum, dermatologically tested, fragrance free."
+P010,S010,Stride Running Shoes,footwear,2026-01-13,3499,P010.png,Lightweight mesh running shoes with cushioned midsole.
+P011,S006,Classic Leather Belt,bags,2026-03-14,1299,P011.png,"Genuine leather belt with brushed steel buckle, made in India."
+P012,S007,Echo Bluetooth Speaker,electronics,2026-04-03,2199,P012.png,"Portable speaker, 12 hour playtime, IPX7 waterproof."
+P014,S006,Canvas Weekender Bag,bags,2026-04-13,2799,P014.png,Waxed canvas weekender with leather trims and shoe compartment.
+P015,S008,Jute Shopper Tote,bags,2026-05-03,699,P015.png,Eco-friendly jute tote with cotton handles.
